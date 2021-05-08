@@ -45,6 +45,7 @@ class Game{
                  var y=200;
                  var index =0;
                  drawSprites();
+                 //ask about vv "in" and what means
                  for(var plr in allPlayers){
                     
                     
@@ -58,7 +59,9 @@ class Game{
                      if(index === player.index){
                          
                        //add code to display the player's name on the respective basket.
-
+                       strokeWeight(52);
+                       fill("red");
+                    text(allPlayers[plr].name, x-25, y+25)
                          
                      }
                     
